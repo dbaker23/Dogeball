@@ -1,0 +1,115 @@
+﻿Build started 12/4/2014 6:40:38 PM.
+     1>Project "C:\Users\Konceptz\Documents\Dogeball\Dogeball\Dogeball.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Attacker_Graphics.cpp Attacker_Input.cpp Attacker_Physics.cpp Component_Actor_Input.cpp Component_Actor_Physics.cpp Component_Character_Graphics.cpp Component_Doge_Physics.cpp Dodger_Graphics.cpp Dodger_Input.cpp Dodger_Physics.cpp Dodger_States.cpp Doge.cpp Doge_Graphics.cpp Doge_Handler.cpp Doge_Physics_Arr.cpp Doge_Physics_Big.cpp Doge_Physics_Med.cpp Doge_Physics_Sml.cpp Game_Actor.cpp Game_Collision.cpp Game_Renderer.cpp Game_Sounds.cpp Game_Text.cpp Game_Timer.cpp Game_Window.cpp High_Score_Graphics.cpp How2Play_Graphics.cpp Main.cpp Main_Loop.cpp Main_Menu_Graphics.cpp Menu.cpp Component_Menu_Graphics.cpp Menu_Handler.cpp Menu_Input.cpp Options_Menu_Graphics.cpp Player_Select_Graphics.cpp Sprite.cpp
+         Attacker_Graphics.cpp
+         Attacker_Input.cpp
+         Attacker_Physics.cpp
+     1>Attacker_Physics.cpp(33): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>Attacker_Physics.cpp(57): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Attacker_Physics.cpp(65): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>Attacker_Physics.cpp(89): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Attacker_Physics.cpp(91): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         Component_Actor_Input.cpp
+         Component_Actor_Physics.cpp
+         Component_Character_Graphics.cpp
+         Component_Doge_Physics.cpp
+     1>Component_Doge_Physics.cpp(10): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>Component_Doge_Physics.cpp(11): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>Component_Doge_Physics.cpp(29): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(35): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(36): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(42): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(43): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(48): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(53): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(58): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(64): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(65): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(71): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Component_Doge_Physics.cpp(72): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         Dodger_Graphics.cpp
+         Dodger_Input.cpp
+         Dodger_Physics.cpp
+     1>Dodger_Physics.cpp(32): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>Dodger_Physics.cpp(56): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Dodger_Physics.cpp(64): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>Dodger_Physics.cpp(88): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Dodger_Physics.cpp(90): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         Dodger_States.cpp
+         Doge.cpp
+         Doge_Graphics.cpp
+         Doge_Handler.cpp
+         Doge_Physics_Arr.cpp
+         Doge_Physics_Big.cpp
+         Doge_Physics_Med.cpp
+         Doge_Physics_Sml.cpp
+         Game_Actor.cpp
+         Game_Collision.cpp
+         Compiling...
+         Game_Renderer.cpp
+         Game_Sounds.cpp
+         Game_Text.cpp
+         Game_Timer.cpp
+         Game_Window.cpp
+         High_Score_Graphics.cpp
+         How2Play_Graphics.cpp
+         Main.cpp
+         Main_Loop.cpp
+         Main_Menu_Graphics.cpp
+         Menu.cpp
+         Component_Menu_Graphics.cpp
+         Menu_Handler.cpp
+         Menu_Input.cpp
+         Options_Menu_Graphics.cpp
+         Player_Select_Graphics.cpp
+         Sprite.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /l"0x0409" /nologo /fo"Release\Dogeball.res" Dogeball.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Konceptz\Documents\Dogeball\Release\Dogeball.exe" /INCREMENTAL:NO /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib SDL2_ttf.lib SDL2_mixer.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Konceptz\Documents\Dogeball\Release\Dogeball.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Konceptz\Documents\Dogeball\Release\Dogeball.lib" /MACHINE:X86 /SAFESEH Release\Dogeball.res
+         Release\Attacker_Graphics.obj
+         Release\Attacker_Input.obj
+         Release\Attacker_Physics.obj
+         Release\Component_Actor_Input.obj
+         Release\Component_Actor_Physics.obj
+         Release\Component_Character_Graphics.obj
+         Release\Component_Doge_Physics.obj
+         Release\Dodger_Graphics.obj
+         Release\Dodger_Input.obj
+         Release\Dodger_Physics.obj
+         Release\Dodger_States.obj
+         Release\Doge.obj
+         Release\Doge_Graphics.obj
+         Release\Doge_Handler.obj
+         Release\Doge_Physics_Arr.obj
+         Release\Doge_Physics_Big.obj
+         Release\Doge_Physics_Med.obj
+         Release\Doge_Physics_Sml.obj
+         Release\Game_Actor.obj
+         Release\Game_Collision.obj
+         Release\Game_Renderer.obj
+         Release\Game_Sounds.obj
+         Release\Game_Text.obj
+         Release\Game_Timer.obj
+         Release\Game_Window.obj
+         Release\High_Score_Graphics.obj
+         Release\How2Play_Graphics.obj
+         Release\Main.obj
+         Release\Main_Loop.obj
+         Release\Main_Menu_Graphics.obj
+         Release\Menu.obj
+         Release\Component_Menu_Graphics.obj
+         Release\Menu_Handler.obj
+         Release\Menu_Input.obj
+         Release\Options_Menu_Graphics.obj
+         Release\Player_Select_Graphics.obj
+         Release\Sprite.obj
+         Generating code
+         Finished generating code
+         Dogeball.vcxproj -> C:\Users\Konceptz\Documents\Dogeball\Release\Dogeball.exe
+     1>Done Building Project "C:\Users\Konceptz\Documents\Dogeball\Dogeball\Dogeball.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:50.97

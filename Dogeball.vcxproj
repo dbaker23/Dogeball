@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{15ECEDC6-3C2C-4672-AD18-2794CC905297}</ProjectGuid>
+    <RootNamespace>Dogeball</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\Projects\Dogeball\Dogeball\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\Dogeball\Dogeball\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\Konceptz\Documents\Dogeball\Dogeball\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Konceptz\Documents\Dogeball\Dogeball\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Attacker_Graphics.cpp" />
+    <ClCompile Include="Attacker_Input.cpp" />
+    <ClCompile Include="Attacker_Physics.cpp" />
+    <ClCompile Include="Component_Actor_Input.cpp" />
+    <ClCompile Include="Component_Actor_Physics.cpp" />
+    <ClCompile Include="Component_Character_Graphics.cpp" />
+    <ClCompile Include="Component_Doge_Physics.cpp" />
+    <ClCompile Include="Dodger_Graphics.cpp" />
+    <ClCompile Include="Dodger_Input.cpp" />
+    <ClCompile Include="Dodger_Physics.cpp" />
+    <ClCompile Include="Dodger_States.cpp" />
+    <ClCompile Include="Doge.cpp" />
+    <ClCompile Include="Doge_Graphics.cpp" />
+    <ClCompile Include="Doge_Handler.cpp" />
+    <ClCompile Include="Doge_Physics_Arr.cpp" />
+    <ClCompile Include="Doge_Physics_Big.cpp" />
+    <ClCompile Include="Doge_Physics_Med.cpp" />
+    <ClCompile Include="Doge_Physics_Sml.cpp" />
+    <ClCompile Include="Game_Actor.cpp" />
+    <ClCompile Include="Game_Collision.cpp" />
+    <ClCompile Include="Game_Renderer.cpp" />
+    <ClCompile Include="Game_Sounds.cpp" />
+    <ClCompile Include="Game_Text.cpp" />
+    <ClCompile Include="Game_Timer.cpp" />
+    <ClCompile Include="Game_Window.cpp" />
+    <ClCompile Include="High_Score_Graphics.cpp" />
+    <ClCompile Include="How2Play_Graphics.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Main_Loop.cpp" />
+    <ClCompile Include="Main_Menu_Graphics.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Component_Menu_Graphics.cpp" />
+    <ClCompile Include="Menu_Handler.cpp" />
+    <ClCompile Include="Menu_Input.cpp" />
+    <ClCompile Include="Options_Menu_Graphics.cpp" />
+    <ClCompile Include="Player_Select_Graphics.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Attacker_Graphics.h" />
+    <ClInclude Include="Attacker_Input.h" />
+    <ClInclude Include="Attacker_Physics.h" />
+    <ClInclude Include="Component_Actor_Input.h" />
+    <ClInclude Include="Component_Actor_Physics.h" />
+    <ClInclude Include="Component_Actor_State.h" />
+    <ClInclude Include="Component_Character_Graphics.h" />
+    <ClInclude Include="Component_Doge_Physics.h" />
+    <ClInclude Include="Component_Graphics.h" />
+    <ClInclude Include="Component_Input.h" />
+    <ClInclude Include="Component_Physics.h" />
+    <ClInclude Include="Dodger_Graphics.h" />
+    <ClInclude Include="Dodger_Input.h" />
+    <ClInclude Include="Dodger_Physics.h" />
+    <ClInclude Include="Dodger_States.h" />
+    <ClInclude Include="Doge.h" />
+    <ClInclude Include="Doge_Graphics.h" />
+    <ClInclude Include="Doge_Handler.h" />
+    <ClInclude Include="Doge_Physics_Arr.h" />
+    <ClInclude Include="Doge_Physics_Big.h" />
+    <ClInclude Include="Doge_Physics_Med.h" />
+    <ClInclude Include="Doge_Physics_Sml.h" />
+    <ClInclude Include="Game_Actor.h" />
+    <ClInclude Include="Game_Collision.h" />
+    <ClInclude Include="Game_Renderer.h" />
+    <ClInclude Include="Game_Sounds.h" />
+    <ClInclude Include="Game_Text.h" />
+    <ClInclude Include="Game_Timer.h" />
+    <ClInclude Include="Game_Window.h" />
+    <ClInclude Include="High_Score_Graphics.h" />
+    <ClInclude Include="How2Play_Graphics.h" />
+    <ClInclude Include="Main_Loop.h" />
+    <ClInclude Include="Main_Menu_Graphics.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Component_Menu_Graphics.h" />
+    <ClInclude Include="Menu_Handler.h" />
+    <ClInclude Include="Menu_Input.h" />
+    <ClInclude Include="Options_Menu_Graphics.h" />
+    <ClInclude Include="Player_Select_Graphics.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sprite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dogeball.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Coding_Conventions.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
